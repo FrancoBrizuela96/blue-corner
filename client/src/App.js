@@ -1,23 +1,34 @@
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
 import './App.css';
+import Card from './Helpers/Cards/Card';
+import { getAllproducts } from './Helpers/getAllproducts.js';
+import { Modal } from './Helpers/Modal/Modal';
 
 function App() {
+  const [productos, setProductos] = useState([]);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    getAllproducts().then( allProducts => {
+      console.log(allProducts)
+      setProductos(allProducts)
+    })
+  }, [])
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container'>
+      <div className='products__container'>
+        <h1>Productos</h1>  
+        <button onClick={() => setIsVisible(!isVisible)}>Agregar Producto</button>
+        <div>
+          { productos && productos?.map( producto => {
+            return (
+              <Card key={producto.Id_producto} producto={producto}/>
+            )
+          })}
+          <Modal isVisible={isVisible} setIsvisible={setIsVisible}/>
+        </div>
+      </div>
     </div>
   );
 }
