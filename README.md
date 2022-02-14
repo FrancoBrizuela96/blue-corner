@@ -1,8 +1,9 @@
 # blue-corner
 Prueba técnica
 
--Insertar el .sql en su database y ejecutar la query.
+-Insertar el .sql en su database y ejecutar la query
 -Ingresar los datos de su database en .env
+-Realizar npm install al proyecto
 
 - Correr el comando npm start en:
 - blue-corner/api para el backend 
