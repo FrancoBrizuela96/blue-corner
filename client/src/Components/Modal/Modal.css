@@ -22,6 +22,7 @@
     position: relative;
 }
 .modal__close {
+    box-shadow: 1px 1px 5px #E2504C;
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -50,6 +51,7 @@
     border-radius: 20px;
 }
 .add__category {
+    box-shadow: 1px 1px 4px #C3E5AE;
     margin-top: 10px;
     margin-left: 20px;
     font-size: 13px;
@@ -91,21 +93,22 @@
     box-shadow: 3px 3px 3px grey;
 }
 .button__delete{
-    min-width: 40px;
+    min-width: 30px;
     margin-top: 10px;
     margin-left: 4px;
-    font-size: 12px;
-    background-color: white;
+    font-size: 8px;
+    background-color: #E2504C;
     border-radius: 100%;
     cursor: pointer;
     color: black;
     border: 1px solid thistle;
 }
 .category__container > ul > button:hover {
-    background-color: #E2504C;
-    color: white;
+    background-color: white;
+    color: #E2504C;
 }
 .save__product {
+    box-shadow: 1px 1px 10px #C3E5AE;
     position: absolute;
     min-width: 192px;
     padding: 10px;

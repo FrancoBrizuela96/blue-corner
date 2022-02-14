@@ -29,7 +29,7 @@ button {
   cursor: pointer;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   border-radius: 15px;
-  box-shadow: 10px 5px 13px grey;
+  box-shadow: 1px 1px 4px #C3E5AE;
   border: none;
   font-size: 17px;
   font-weight: 600;

@@ -54,23 +54,19 @@ export const Modal = ({isVisible, setIsvisible, setProductos, ProductContext}) =
             return
         } 
         if(Id_producto > 0) {
-            console.log('Entrando con idProducto: ')
             const {data} = await axios.put(`http://localhost:3001/api/productos/${Id_producto}`, {
                 newName: input.name,
                 etiquetas: input.categories 
             });
-            console.log(data)
             newProduct = {
                 Nombre: data.Nombre,
                 Id_producto: data.Id_producto
             };
         } else {
-            console.log('Entrando sin idProducto')
             const {data} = await axios.post('http://localhost:3001/api/productos/', {
                 Nombre: input.name,
                 etiquetas: input.categories
             });
-            console.log(data)
             const {Nombre, Id_producto} = data;
             newProduct = {
                 Nombre,
