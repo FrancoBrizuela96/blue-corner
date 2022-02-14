@@ -4,19 +4,24 @@ body {
 }
 .container {
   display: flex;
-  background-color: black;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
+  background-color: #C3E5AE;
 }
 .products__container {
-  width: 50%;
-  height: 100vh;
-  margin: 0 auto;
-  background-color: rgb(72, 109, 109);
+  width: 35%;
+  min-height: 75vh;
+  height: fit-content;
+  border-radius: 40px;
+  margin: auto auto;
   display: flex;
   flex-direction: column;
+  box-shadow: 8px 8px 5px gray;
+  background-color: white;
 }
 h1 {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 50px;
   text-align: center;
 }
 button {
@@ -24,9 +29,23 @@ button {
   cursor: pointer;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   border-radius: 15px;
+  box-shadow: 10px 5px 13px grey;
+  border: none;
   font-size: 17px;
   font-weight: 600;
+  margin-top: -10px;
+  margin-bottom: 10px;
   align-self: center;
-  padding: 6px;
+  padding: 10px;
+  min-width: 100px;
   width: 25%;
+}
+button:hover {
+  background-color: #C3E5AE;
+}
+.all__cards {
+  margin-top: -10px;
+  margin: 0 auto;
+  width: 70%;
+  padding: 10px;
 }

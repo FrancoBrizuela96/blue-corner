@@ -1,18 +1,23 @@
 .card__container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 .card {
+    cursor: pointer;
     margin: 0 auto;
     display: flex;
     width: 80%;
     padding: 0 25px;
     background-color: white;
-    margin-top: 8px;
+    margin-top: 15px;
     border-radius: 40px;
     align-items: center;
-    border: 0.5px solid thistle;
+    box-shadow: 10px 5px 10px grey;
     justify-content: space-between;
+    transition: all .2s ease-in-out;
+}
+.card:hover {
+    transform: scale(1.1);
 }
 .card__title {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -20,14 +25,16 @@
     font-weight: 700;
 }
 .boton__cerrar {
+    font-size: 18px;
+    font-weight: bolder;
     cursor: pointer;
     color: white;
-    padding: 5px;
+    padding: 10px;
     border-radius: 20px;
-    background-color: red;
-    border: 0.5px solid black;
+    background-color: #E2504C;
+    border: 0.5px solid thistle;
 }
 .boton__cerrar:hover{
-    color: red;
+    color: #E2504C;
     background-color: white;
 }
