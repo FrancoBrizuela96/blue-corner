@@ -1,7 +1,16 @@
 # blue-corner
 Prueba técnica  
 
--Insertar el .sql en su database y ejecutar la query  
+Insertar el .sql en su database y ejecutar la query  
+Crear un file .env dentro de la ruta blue-corner/api con el siguiente formato:   
+  
+ DATABASE=bluecorner  
+ DB_USER=*Nombre de usuario de la database*  
+ PASSWORD=*Password de la database*  
+ DB_HOST=*Hostname de la database*  
+ PORT=*Puerto donde queremos que corra el backend*    
+   
+   
 -Ingresar los datos de su database en .env  
 -Ejecutar npm install al proyecto  
 
