@@ -5,7 +5,7 @@ Insertar el .sql en su database y ejecutar la query.
 Ingresar los datos de su database en .env
 
 Correr el comando npm start en:
-blue-corner/api 
+blue-corner/api y
 blue-corner/client
 
 Al hacer click en Agregar Producto se abrirá un modal de creación, en el cual el único campo obligatorio sera su Nombre.
